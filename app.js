@@ -25,6 +25,13 @@ for (const button of buttons) {
             if (number == 'C') {
                 calcInput.value = '';
             }
+            //Simply use substring method....
+            // if(key=='<'){
+            // inputKey.value= inputKey.value.substring(0, inputKey.value.length-1);
+            // }
+            if (number == '<') {
+                calcInput.value = calcInput.value.substring(0, calcInput.value.length - 1);
+            }
         }
         else {
             const previousNumber = calcInput.value;
